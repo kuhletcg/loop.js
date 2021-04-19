@@ -72,3 +72,25 @@ function getPositiveNumber(numbers) {
   return positiveNumbers;
 }
 console.log(getPositiveNumber([6, -1, 4, -8, 10]));
+
+function getNumber(numbers) {
+  let number = [];
+
+  for (let i = 0; 1 < number.length; i++) {
+    if (number[i] > 0) {
+      numbers.push(numbers[i]);
+    }
+  }
+  return numbers;
+}
+console.log(getNumber(["r", 3, "v"]));
+
+// Return two highest  number in an array
+
+const findLargestNumbers = (arr) => {
+  let twoLargest = [];
+  twoLargest.push(arr.sort((a, b) => b - a)[0]);
+  twoLargest.push(arr.sort((a, b) => b - a)[1]);
+  return twoLargest;
+};
+console.log(findLargestNumbers([14, 26, 10]));
