@@ -140,4 +140,4 @@ let result = marks.some(function (e) {
     return e >= this.min && e <= this.max;
 }, range);
 
-console.log(result);
+console.log(result); // output is true
