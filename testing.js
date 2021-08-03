@@ -125,3 +125,19 @@ let marks = [4, 5, 7, 9, 10, 2];
 
 console.log(exists(4, marks));
 console.log(exists(11, marks));
+
+
+
+// Check if an array has one element that is in a range
+let marks = [4, 5, 7, 9, 10, 2];
+
+const range = {
+    min: 8,
+    max: 10
+};
+
+let result = marks.some(function (e) {
+    return e >= this.min && e <= this.max;
+}, range);
+
+console.log(result);
