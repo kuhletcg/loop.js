@@ -18,7 +18,7 @@ console.log(getOddNumber([2, 4, 6, 7, 10]));
 const grades = [80, 7, 68];
 
 function getAvg(grades) {
-  const total = grades.reduce((acc, c) => acc + c, 0);
+  const total = grades.reduce;
   return total;
 }
 
