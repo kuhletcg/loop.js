@@ -26,23 +26,23 @@ const average = getAvg(grades);
 console.log(average);
 
 //  Remove array
-// const array = ["Kuhle", "Luzelwande", "Esihle"];
+const array = ["Kuhle", "Luzelwande", "Esihle"];
 
-// console.log(array);
+console.log(array);
 
-// const index = array.indexOf(Kuhle);
-// if (index > -1) {
-//   array.splice(index, Kuhle);
-// }
+const index = array.indexOf(Kuhle);
+if (index > -1) {
+  array.splice(index, Kuhle);
+}
 
-// console.log(array);
+console.log(array);
 
-const items = ["Luzelwande", "Esihle", "Athandwa"];
+// const items = ["Luzelwande", "Esihle", "Athandwa"];
 
-const removeItem = (items, i) =>
-  items.slice(0, i - 1).concat(items.slice(i, items.length));
+// const removeItem = (items, i) =>
+//   items.slice(0, i - 1).concat(items.slice(i, items.length));
 
-let filteredItems = removeItem(items, 2);
-filteredItems = removeItem(filteredItems, 3);
+// let filteredItems = removeItem(items, 2);
+// filteredItems = removeItem(filteredItems, 3);
 
-console.log(filteredItems);
+// console.log(filteredItems);
