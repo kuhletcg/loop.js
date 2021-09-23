@@ -26,10 +26,22 @@ const average = getAvg(grades);
 console.log(average);
 
 //  Remove array
-const array = ["Kuhle", "Luzelwande", "Esihle"];
+const array = ["Athandwa", "Luzelwande", "Esihle"];
 
 const items = ["Athandwa", "Luzelwande", "Esihle"];
 const valuesToRemove = ["Luzelwande"];
 const filteredItems = items.filter((item) => !valuesToRemove.includes(item));
+
+console.log(filteredItems);
+
+OR;
+
+const items = ["Luzelwande", "Esihle", "Athandwa"];
+
+const removeItem = (items, i) =>
+  items.slice(0, i - 1).concat(items.slice(i, items.length));
+
+let filteredItems = removeItem(items, 2);
+filteredItems = removeItem(filteredItems, 3);
 
 console.log(filteredItems);
