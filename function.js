@@ -28,21 +28,8 @@ console.log(average);
 //  Remove array
 const array = ["Kuhle", "Luzelwande", "Esihle"];
 
-console.log(array);
+const items = ["Athandwa", "Luzelwande", "Esihle"];
+const valuesToRemove = ["Luzelwande"];
+const filteredItems = items.filter((item) => !valuesToRemove.includes(item));
 
-const index = array.indexOf(Kuhle);
-if (index > -1) {
-  array.splice(index, Kuhle);
-}
-
-console.log(array);
-
-// const items = ["Luzelwande", "Esihle", "Athandwa"];
-
-// const removeItem = (items, i) =>
-//   items.slice(0, i - 1).concat(items.slice(i, items.length));
-
-// let filteredItems = removeItem(items, 2);
-// filteredItems = removeItem(filteredItems, 3);
-
-// console.log(filteredItems);
+console.log(filteredItems);
