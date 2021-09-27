@@ -45,3 +45,21 @@ let filteredItems = removeItem(items, 2);
 filteredItems = removeItem(filteredItems, 3);
 
 console.log(filteredItems);
+
+// Get highest and a lowest number in an array
+// const numbers = [20, 10, 3, 0]
+
+// function getHighestLowest(number){
+
+// }
+
+function getHighestAndLowest(numbers) {
+  let highestAndLowest = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+      highestAndLowest.push(numbers[i]);
+    }
+  }
+  return highestAndLowest;
+}
+console.log(highestAndLowest([6, 03, 31, 10]));
