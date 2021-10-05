@@ -62,4 +62,21 @@ function getHighestAndLowest(numbers) {
   }
   return highestAndLowest;
 }
-console.log(highestAndLowest([6, 03, 31, 10]));
+console.log(highestAndLowest(numbers, [6, 03, 31, 10]));
+
+// Return students that has passed
+const students = [
+  { name: "Luzelwande", mark: 59 },
+  { name: "Athandwa ", mark: 45 },
+  { name: "Esihle", mark: 36 },
+];
+
+const getStudentsHasPassed = (students) => {
+  var totalMarks = 0;
+  for (let i = 0; i < students.length; i++) {
+    totalMarks += students[i].mark;
+  }
+
+  var currentTotal = totalMarks / (students.length * 50);
+  return currentTotal * 50;
+};
